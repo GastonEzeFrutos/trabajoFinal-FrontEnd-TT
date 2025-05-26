@@ -1,0 +1,53 @@
+/* Estilos del Header */
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    background-color: #009DDD;
+}
+
+header img {
+    width: 150px;
+}
+
+header nav, ul, li {
+    display: inline;
+}
+
+#headerNav ul{
+    list-style: none;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+header iframe {
+    display: inline;
+}
+
+/* Estilos del Footer */
+
+footer {
+    background-color: lightgrey;
+}
+
+footer nav, ul, li {
+    display: block;
+}
+
+#footerNav ul{
+    list-style: none;
+}
+
+#footerNav a {
+    text-decoration: none;
+    color: olive;
+}
+
+.TextoVerde {
+    color: green;
+    font-size: 2rem;
+}

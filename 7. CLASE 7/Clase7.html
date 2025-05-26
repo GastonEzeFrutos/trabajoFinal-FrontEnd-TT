@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-Entrega</title>
+
+
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exile&family=Oswald&display=swap" rel="stylesheet">
+
+    <!-- Iconos de Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Mis estilos -->
+    <link rel="stylesheet" href="Estilos Clase 7.css">
+</head>
+
+<body>
+    <header>
+        <!-- Aca estamos dentro del header-->
+        <div id="logoYnav">
+            <img src="Imagenes/Mxshop.jpg" alt="Imagen de MxShop">
+            <nav id="headerNav">
+                <!-- Aca estamos dentro del nav-->
+                <ul>
+                    <li><i class="fa-solid fa-house"></i><a href="#"> Inicio</a></li>
+                    <li><i class="fa-solid fa-users"></i><a href=""> Nosotros</a></li>
+                    <li><i class="fa-solid fa-box"></i><a href="#"> Productos</a></li>
+                    <li><i class="fa-solid fa-screwdriver-wrench"></i><a href=""> Servicios</a></li>
+                    <li><i class="fa-solid fa-address-card"></i><a href=""> Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <h1>Bienvenidos a MxShop</h1>
+
+        <div id="VideoBienvenido">
+            <video controls width="30%" muted>
+                <source src="Videos/Video Loop Bienvenidos.mp4" type="video/mp4">
+            </video>
+        </div>
+    </header>
+
+
+
+    <main>
+        <!-- Aca estamos dentro del main-->
+        <section>
+            <h2 id="h2productos">Nuestros Productos</h2>
+            <div id="contenedorProductos">
+                <div>
+                    <img src="Imagenes/Vino1.jpg" alt="Foto de vino">
+                    <h3>Rue de Bonpland Chardonnay</h3>
+                    <p>$30.000</p>
+                </div>
+                <div>
+                    <img src="Imagenes/Vino2.jpg" alt="Foto de vino">
+                    <h3>Rue de Bonpland Blend</h3>
+                    <p>$25.000</p>
+                </div>
+                <div>
+                    <img src="Imagenes/Vino3.jpg" alt="Foto de vino">
+                    <h3>Vino Reflejo</h3>
+                    <p>$35.000</p>
+                </div>
+                <div>
+                    <img src="Imagenes/Producto3.jpg" alt="Foto de vino">
+                    <h3>Caja Chocolate Marroc</h3>
+                    <p>$5.000</p>
+                </div>
+            </div>
+            
+            <h2>Contacto</h2>
+        <form action="https://formspree.io/f/meoggjkv" method="POST">
+            
+                <label>
+                    Tu mail:
+                    <input type="email" name="email" required>
+                </label>
+
+                <label>
+                    Tu mensaje:
+                    <textarea name="message" required></textarea>
+                </label>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <!--Aca estamos dentro del footer-->
+        <h3 class="TextoColor">Seguinos en nuestras redes</h3>
+
+        <nav id="footerNav">
+            <ul>
+                <a href="https://www.instagram.com/">
+                    <li><i class="fa-brands fa-instagram"></i> Instagram</li>
+                </a>
+                <a href="https://www.tiktok.com/es/">
+                    <li><i class="fa-brands fa-tiktok"></i> Tiktok</li>
+                </a>
+                <a href="https://www.facebook.com/maxi.desantis.92">
+                    <li><i class="fa-brands fa-facebook-f"></i> Facebook</li>
+                </a>
+            </ul>
+        </nav>
+
+        <h3 class="TextoColor">Visitanos</h3>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.2131449199164!2d-58.43063441575536!3d-34.598771375322826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca707fc0bac7%3A0x4456deaf66267972!2sAv.%20Estado%20de%20Israel%204471%2C%20C1185AAD%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1748043141427!5m2!1ses!2sar"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </footer>
+
+</body>
+
+</html>

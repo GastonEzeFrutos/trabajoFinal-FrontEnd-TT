@@ -1,0 +1,118 @@
+/* Estilos del Header */
+body {
+    font-family: "Oswald", sans-serif;
+}
+
+header {
+    background-color: #009DDD;
+    width: 60vw;
+    border:10px ridge #77C3F4;
+    padding: 10px;
+    margin:4rem;
+
+}
+
+header img {
+    width: 150px;
+    border: 10px groove whitesmoke;
+    padding: 15px;
+
+}
+
+header nav,
+ul,
+li {
+    display: inline;
+}
+
+#headerNav ul {
+    list-style-type: style none;
+    border:10px double #77C3F4;
+    padding: 5px;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+header iframe {
+    display: inline;
+    border:5px outset #77C3F4;
+    padding: 5px;
+}
+
+#h1Bienvenidos{
+    display: inline-block;
+    /*border: 5px solid black;*/
+    border: 5px dotted white;
+    /*padding: 10px;*/
+    padding: 10px;
+    margin: 4rem; /* 4 * 16 = 64*/
+    color: white;
+}
+
+#contenedorVideos {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Estilos del Main */
+
+main{
+    background-color: #2e9dc2;
+    width: 60vw;
+    border:10px ridge #256e9e;
+    padding: 10px;
+    margin:4rem;
+}
+
+#contenedorProductos{
+    display: flex;
+    gap:1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Estilos del Footer */
+
+footer {
+    background-color: lightgrey;
+    width: 60vw;
+    border:10px ridge #77C3F4;
+    padding: 10px;
+    margin:4rem;
+}
+
+footer nav,
+ul,
+li {
+    display: block;
+}
+
+#footerNav ul {
+    list-style: none;
+    border:10px dashed darkgrey;
+    padding: 5px;
+}
+
+#footerNav a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+.TextoColor {
+    color: black;
+    font-size: 2rem;
+    border-bottom: 5px dotted white;
+    /*padding: 10px;*/
+    padding-bottom: 10px;
+}
+
+/*header {
+    background-image: url(./Imagenes/cancha.jpg);
+    background-size: cover;  La imagen cubre todo el contenedor  
+    background-position: center;  Centra la imagen }*/

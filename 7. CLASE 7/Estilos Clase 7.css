@@ -1,0 +1,33 @@
+html{
+    background-color: burlywood;
+}
+
+header nav {
+    width: 100%;
+}
+
+header ul {
+    height: 4rem;
+    display: flex;
+    justify-content:space-between;
+}
+
+header li {
+    list-style: none;
+} /* le saca los puntos de los items*/
+
+header a {
+    text-decoration: none;
+}
+
+img {
+    width: 200px;
+}
+
+#logoYnav{
+    margin-bottom: 1rem; /* Para mantener un orden */
+    display: flex;
+}
+
+
+
