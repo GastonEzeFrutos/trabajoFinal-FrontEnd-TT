@@ -1,5 +1,5 @@
-html{
-    
+html {
+    scroll-behavior: smooth;
 }
 
 header {
@@ -7,28 +7,41 @@ header {
     border: 2px solid red;
     padding: 20px;
     margin-bottom: 2rem;
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+*/
 }
 
 header nav {
     width: 100%;
     height: 8rem;
     display: flex;
-    align-items: center; /* Trabaja en eje secundario vertical*/
+    align-items: center;
+    /* Trabaja en eje secundario vertical*/
 }
 
 header ul {
     height: 4rem;
     gap: 50px;
     display: flex;
-    justify-content: end; /* Si quiero centrar en formato horizontal*/
+    justify-content: end;
+    /* Si quiero centrar en formato horizontal*/
     /*justify-content:space-between;*/
     /* justify-content: start; para ponerlo al inicio */
-    flex-wrap: wrap; /* envuelve a los elementos */
+    flex-wrap: wrap;
+    /* envuelve a los elementos */
+    padding: 0;
+    align-items: center;
 }
 
 header li {
     list-style: none;
-} /* le saca los puntos de los items*/
+}
+
+/* le saca los puntos de los items*/
 
 header a {
     text-decoration: none;
@@ -43,10 +56,19 @@ img {
     width: 200px;
 }
 
-#logoYnav{
-    margin-bottom: 1rem; /* Para mantener un orden */
+#logoYnav {
+    margin-bottom: 1rem;
+    /* Para mantener un orden */
     display: flex;
 }
+
+/*body{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: beige;
+    padding-top: 800px;
+}*/
 
 main {
     background-color: #4B4C3C;
@@ -55,32 +77,167 @@ main {
     margin: 0 20%;
 }
 
+/*.contacto-y-pago{
+    background-image:url(Imagenes/enoturismo-mendoza-infocampo.jpg);
+    background-size: cover;
+    line-height: 2rem;
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+*/
+.fondo-transparente {
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 2rem 0;
+}
+
+.contacto-y-pago {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.contacto-y-pago form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 300px;
+    flex: 1;
+}
+
+.contacto-y-pago input,
+.contacto-y-pago textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contacto-y-pago nav ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.contacto-y-pago nav ul li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
 
 
-#contenedorProductos{
+
+#contenedorProductos {
     display: flex;
     gap: 50px;
     flex-wrap: wrap;
 }
 
-#h2productos{
-    border:2px solid red;
+#h2productos {
+    border: 2px solid red;
     padding: 1rem;
 }
 
-footer{
+footer {
     background-color: black;
-    color:white;
+    color: white;
     border: 2px solid red;
     padding: 1rem;
     margin: 5%;
 }
 
-footer li{
+footer li {
     list-style: none;
 }
 
 footer a {
-    color:white;
+    color: white;
     text-decoration: none;
+}
+
+
+
+/* Reseñas */
+.resenias {
+    display: grid;
+    /*grid-template-columns: 16rem 1fr 150px;*/
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /*grid-template-rows: 1fr 1 fr;*/
+    gap: 1rem;
+    place-items: center;
+    padding: 1rem;
+
+}
+
+.resenias img {
+    width: 240px;
+}
+
+.card {
+    background-color: #606032;
+    border: 1px solid #909090;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: black;
+    width: 250px;
+    padding: 20px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* 🟢 MEDIA QUERY para pantallas pequeñas (responsive) */
+
+@media (max-width: 768px) {
+    .resenias {
+        /*grid-template-columns: 1fr;
+        /* una sola columna en pantallas pequeñas 
+        padding: 10px;*/
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .contacto-y-pago {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .contacto-y-pago form,
+    .contacto-y-pago nav {
+        width: 100%;
+    }
+
+    .contacto-y-pago input,
+    .contacto-y-pago textarea {
+        padding: 8px;
+        /* más compacto */
+        font-size: 0.95rem;
+        /* texto legible pero no grande */
+    }
+
+    .contacto-y-pago button {
+        padding: 10px;
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .contacto-y-pago h2,
+    .contacto-y-pago h3 {
+        text-align: center;
+    }
 }
